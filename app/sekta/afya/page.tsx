@@ -352,8 +352,8 @@ export default function AfyaPage() {
               .filter((project) => project.status === "Umekamilika")
               .map((project, index) => (
                 <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
+                  <DriveImage
+                    src={project.image}
                     alt={project.name}
                     width={400}
                     height={200}
