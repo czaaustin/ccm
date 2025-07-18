@@ -7,9 +7,8 @@ import Script from "next/script"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Serikali ya Awamu ya Nne - Mafanikio ya Miaka 4",
+  title: "Serikali ya Awamu ya Sita - Mafanikio ya Miaka 4",
   description: "Tovuti rasmi ya mafanikio ya serikali katika kipindi cha miaka minne ya utawala",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
