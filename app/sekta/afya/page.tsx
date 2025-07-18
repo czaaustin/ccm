@@ -75,7 +75,7 @@ export default function AfyaPage() {
       description: "Awamu ya pili ya ujenzi imekamilika na imeanza kutoa huduma",
       location: "Chato",
       completedDate: "2023",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1OsF6MLOPj2bOGtmDBoSJ0X_VapVtCdWZ/view?usp=drive_link",
       details: "Hospitali hii inasaidia kupunguza msongamano wa wagonjwa katika hospitali za rufaa za mikoa.",
     },
     {
@@ -84,7 +84,7 @@ export default function AfyaPage() {
       description: "Ujenzi wa hospitali za mikoa mipya 5: Katavi, Njombe, Songwe, Simiyu, Geita",
       location: "Mikoa Mipya",
       progress: 85,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1ys3DHeJQ7i_FEaQRWdXLkfmWlQUunyt4/view?usp=drive_link",
       details: "Hospitali hizi zimeanza kutoa huduma kwa wananchi wa maeneo husika na zitakamilika kabisa mwaka 2024.",
     },
     {
@@ -93,7 +93,7 @@ export default function AfyaPage() {
       description: "Hospitali za Shinyanga, Singida, Mara na Ruvuma zimehamishwa majengo mapya",
       location: "Mikoa Mbalimbali",
       completedDate: "2023",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1_Ja2WLpUG8pcpVjyXe5MPaM6SJssal6d/view?usp=drive_link",
       details:
         "Hospitali hizi zimehamishwa kutoka majengo yake ya zamani kwa kujenga hospitali mpya katika maeneo mapya.",
     },
