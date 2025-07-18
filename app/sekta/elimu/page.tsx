@@ -14,21 +14,21 @@ export default function ElimuPage() {
       location: "Mtwara",
       completedDate: "Februari 2023",
       description: "Shule 25 mpya za msingi zilizojengwa katika mkoa wa Mtwara",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1vwxS1zlKnLvOuJvbpZLpsHu1bQzVlFXk/view?usp=drive_link",
     },
     {
       name: "Chuo Kikuu cha Teknolojia - Arusha",
       location: "Arusha",
       completedDate: "Mei 2023",
       description: "Chuo kipya cha teknolojia na sayansi",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1BpSLlRJWmDdDNsVtrTOykNzJZajp2LdS/view?usp=drive_link",
     },
     {
       name: "Maabara ya Sayansi - Shule za Sekondari",
       location: "Mwanza",
       completedDate: "Septemba 2022",
       description: "Maabara 50 ya sayansi katika shule za sekondari",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/18SyodQYOG8hmWvtoVKm85A-pXBYN0sBs/view?usp=drive_link",
     },
   ]
 
