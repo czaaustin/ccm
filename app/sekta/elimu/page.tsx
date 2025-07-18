@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
 import { GraduationCap, MapPin, Calendar, Download } from "lucide-react"
-import Image from "next/image"
+import { DriveImage } from "@/components/drive-image"
 
 export default function ElimuPage() {
   const achievedProjects = [
@@ -157,8 +157,8 @@ export default function ElimuPage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {achievedProjects.map((project, index) => (
                   <Card key={index} className="overflow-hidden">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
+                    <DriveImage
+                      src={project.image}
                       alt={project.name}
                       width={300}
                       height={200}
