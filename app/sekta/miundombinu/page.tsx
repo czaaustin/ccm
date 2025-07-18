@@ -129,15 +129,27 @@ export default function MiundombinuPage() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="achieved" className="max-w-6xl mx-auto">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="achieved" className="data-[state=active]:bg-[#049132] data-[state=active]:text-white">
-                Miradi Iliyokamilika
+            <TabsList className="w-full flex-col sm:flex-row gap-1 h-auto p-1 bg-gray-100">
+              <TabsTrigger
+                value="achieved"
+                className="w-full sm:w-auto text-xs sm:text-sm data-[state=active]:bg-[#edfa10] data-[state=active]:text-[#049132] data-[state=active]:border-[#049132] border-2 border-transparent"
+              >
+                <span className="hidden sm:inline">Miradi Iliyokamilika</span>
+                <span className="sm:hidden">Iliyokamilika</span>
               </TabsTrigger>
-              <TabsTrigger value="ongoing" className="data-[state=active]:bg-[#049132] data-[state=active]:text-white">
-                Miradi Inayoendelea
+              <TabsTrigger
+                value="ongoing"
+                className="w-full sm:w-auto text-xs sm:text-sm data-[state=active]:bg-[#edfa10] data-[state=active]:text-[#049132] data-[state=active]:border-[#049132] border-2 border-transparent"
+              >
+                <span className="hidden sm:inline">Miradi Inayoendelea</span>
+                <span className="sm:hidden">Inaendelea</span>
               </TabsTrigger>
-              <TabsTrigger value="planned" className="data-[state=active]:bg-[#049132] data-[state=active]:text-white">
-                Miradi Iliyopangwa
+              <TabsTrigger
+                value="planned"
+                className="w-full sm:w-auto text-xs sm:text-sm data-[state=active]:bg-[#edfa10] data-[state=active]:text-[#049132] data-[state=active]:border-[#049132] border-2 border-transparent"
+              >
+                <span className="hidden sm:inline">Miradi Iliyopangwa</span>
+                <span className="sm:hidden">Iliyopangwa</span>
               </TabsTrigger>
             </TabsList>
 
