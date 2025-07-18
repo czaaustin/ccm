@@ -1,0 +1,107 @@
+import { Card, CardContent } from "@/components/ui/card"
+import { Navigation } from "@/components/navigation"
+import Link from "next/link"
+import { Heart, GraduationCap, Building, Wheat, Truck, Zap, Droplets, Factory } from "lucide-react"
+
+export default function SektaPage() {
+  const sectors = [
+    {
+      name: "Afya",
+      icon: Heart,
+      href: "/sekta/afya",
+      description: "Huduma za afya na miundombinu ya kitabibu",
+      projects: "257 Miradi",
+    },
+    {
+      name: "Elimu",
+      icon: GraduationCap,
+      href: "/sekta/elimu",
+      description: "Maendeleo ya elimu na mafunzo",
+      projects: "800 Miradi",
+    },
+    {
+      name: "Miundombinu",
+      icon: Building,
+      href: "/sekta/miundombinu",
+      description: "Ujenzi wa miundombinu ya kimsingi",
+      projects: "450 Miradi",
+    },
+    {
+      name: "Kilimo",
+      icon: Wheat,
+      href: "/sekta/kilimo",
+      description: "Maendeleo ya kilimo na mifugo",
+      projects: "320 Miradi",
+    },
+    {
+      name: "Uchukuzi",
+      icon: Truck,
+      href: "/sekta/uchukuzi",
+      description: "Miundombinu ya uchukuzi na barabara",
+      projects: "180 Miradi",
+    },
+    {
+      name: "Nishati",
+      icon: Zap,
+      href: "/sekta/nishati",
+      description: "Maendeleo ya nishati na umeme",
+      projects: "95 Miradi",
+    },
+    {
+      name: "Maji",
+      icon: Droplets,
+      href: "/sekta/maji",
+      description: "Upatikanaji wa maji safi na usafi",
+      projects: "380 Miradi",
+    },
+    {
+      name: "Viwanda",
+      icon: Factory,
+      href: "/sekta/viwanda",
+      description: "Maendeleo ya viwanda na biashara",
+      projects: "150 Miradi",
+    },
+  ]
+
+  return (
+    <div className="min-h-screen bg-white">
+      <Navigation />
+
+      {/* Header */}
+      <section className="bg-gradient-to-r from-[#049132] to-[#edfa10] py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Mafanikio kwa Sekta</h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Tazama mafanikio yaliyopatikana katika kila sekta ya maendeleo
+          </p>
+        </div>
+      </section>
+
+      {/* Sectors Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {sectors.map((sector) => (
+              <Link key={sector.name} href={sector.href}>
+                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:border-[#edfa10] border-2">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="w-16 h-16 bg-[#049132]/10 rounded-full flex items-center justify-center mb-4">
+                        <sector.icon className="h-8 w-8 text-[#049132]" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{sector.name}</h3>
+                      <p className="text-gray-600 text-sm mb-3">{sector.description}</p>
+                      <div className="bg-[#edfa10] text-[#049132] px-3 py-1 rounded-full text-sm font-medium">
+                        {sector.projects}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
