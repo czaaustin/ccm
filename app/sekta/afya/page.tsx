@@ -24,7 +24,7 @@ import {
   ArrowUp,
   CheckCircle,
 } from "lucide-react"
-import Image from "next/image"
+import { DriveImage } from "@/components/drive-image"
 
 export default function AfyaPage() {
   const keyStats = [
@@ -65,7 +65,7 @@ export default function AfyaPage() {
       description: "Awamu ya kwanza ya ujenzi imekamilika na imeanza kutoa huduma",
       location: "Mtwara",
       completedDate: "2023",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1k6r_exp-CIsBhjqedZh_8p90EfkZSNFu/view?usp=drive_link",
       details:
         "Hospitali hii ya rufaa ya kanda imeanza kutoa huduma za kibingwa kwa wananchi wa mkoa wa Mtwara na mikoa jirani.",
     },
@@ -412,8 +412,8 @@ export default function AfyaPage() {
               .filter((project) => project.status === "Inaendelea")
               .map((project, index) => (
                 <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
+                  <DriveImage
+                    src={project.image}
                     alt={project.name}
                     width={400}
                     height={200}
