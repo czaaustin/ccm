@@ -14,21 +14,21 @@ export default function MiundombinuPage() {
       location: "Dodoma",
       completedDate: "Aprili 2023",
       description: "Jengo jipya la ofisi za serikali la ghorofa 15",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1Mt_ibbQytQQLrSMbE9CRG6OrKj1ZyZg6/view?usp=drive_link",
     },
     {
       name: "Uwanja wa Michezo - Dar es Salaam",
       location: "Dar es Salaam",
       completedDate: "Juni 2023",
       description: "Uwanja mkuu wa michezo wa kiwango cha kimataifa",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/10C5rrEpTzyeofyl_Zpf1-FmRgtIwWSTq/view?usp=drive_link",
     },
     {
       name: "Majengo ya Makazi - Mwanza",
       location: "Mwanza",
       completedDate: "Oktoba 2022",
       description: "Majengo 200 ya makazi ya bei nafuu",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "https://drive.google.com/file/d/1jcbZVib8P0V1wdeqvqu4MK9MIXCrFOOZ/view?usp=drive_link",
     },
   ]
 
