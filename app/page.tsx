@@ -32,7 +32,7 @@ export default function HomePage() {
             Serikali ya Awamu ya Sita
           </h1>
           <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto" data-translate="years-of-achievements">
-            Miaka 5 ya Mafanikio - Tazama maendeleo yaliyofikiwa katika sekta mbalimbali
+            Miaka 4 ya Mafanikio - Tazama maendeleo yaliyofikiwa katika sekta mbalimbali
           </p>
           <div className="flex items-center justify-center gap-2 text-white mb-8">
             <CheckCircle className="h-5 w-5" />
