@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Progress } from "@/components/ui/progress"
 import { Wheat, MapPin, Calendar, Download } from "lucide-react"
-import Image from "next/image"
-
 export default function KilimoPage() {
   const achievedProjects = [
     {
@@ -169,29 +167,33 @@ export default function KilimoPage() {
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="achieved" className="max-w-6xl mx-auto">
-            <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="achieved" className="data-[state=active]:bg-[#049132] data-[state=active]:text-white">
-                Miradi Iliyokamilika
+            <TabsList className="w-full flex-col sm:flex-row gap-1 h-auto p-1 bg-gray-100">
+              <TabsTrigger
+                value="achieved"
+                className="w-full sm:w-auto text-xs sm:text-sm data-[state=active]:bg-[#edfa10] data-[state=active]:text-[#049132] data-[state=active]:border-[#049132] border-2 border-transparent"
+              >
+                <span className="hidden sm:inline">Miradi Iliyokamilika</span>
+                <span className="sm:hidden">Iliyokamilika</span>
               </TabsTrigger>
-              <TabsTrigger value="ongoing" className="data-[state=active]:bg-[#049132] data-[state=active]:text-white">
-                Miradi Inayoendelea
+              <TabsTrigger
+                value="ongoing"
+                className="w-full sm:w-auto text-xs sm:text-sm data-[state=active]:bg-[#edfa10] data-[state=active]:text-[#049132] data-[state=active]:border-[#049132] border-2 border-transparent"
+              >
+                <span className="hidden sm:inline">Miradi Inayoendelea</span>
+                <span className="sm:hidden">Inaendelea</span>
               </TabsTrigger>
-              <TabsTrigger value="planned" className="data-[state=active]:bg-[#049132] data-[state=active]:text-white">
-                Miradi Iliyopangwa
+              <TabsTrigger
+                value="planned"
+                className="w-full sm:w-auto text-xs sm:text-sm data-[state=active]:bg-[#edfa10] data-[state=active]:text-[#049132] data-[state=active]:border-[#049132] border-2 border-transparent"
+              >
+                <span className="hidden sm:inline">Miradi Iliyopangwa</span>
+                <span className="sm:hidden">Iliyopangwa</span>
               </TabsTrigger>
             </TabsList>
 
             <TabsContent value="achieved">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {achievedProjects.map((project, index) => (
-                  <Card key={index} className="overflow-hidden">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.name}
-                      width={300}
-                      height={200}
-                      className="w-full h-48 object-cover"
-                    />
                     <CardContent className="p-6">
                       <Badge className="bg-green-100 text-green-800 mb-3" data-translate="completed">
                         ✅ Umekamilika
