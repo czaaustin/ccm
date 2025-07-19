@@ -194,6 +194,7 @@ export default function KilimoPage() {
             <TabsContent value="achieved">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {achievedProjects.map((project, index) => (
+                  <Card key={index}>
                     <CardContent className="p-6">
                       <Badge className="bg-green-100 text-green-800 mb-3" data-translate="completed">
                         ✅ Umekamilika
